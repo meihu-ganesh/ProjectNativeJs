@@ -7,7 +7,7 @@
  */
 
 import React, {useState} from 'react';
-import {Alert, Button, FlatList, StyleSheet, Text, TextInput, View} from 'react-native';
+import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
 import ExStyles from './style';
 
 const App = () => {
@@ -29,16 +29,44 @@ const App = () => {
       id:4,
       name: 'Sai Naga Raju'
     },
+    {
+      id:5,
+      name: 'NagRaju'
+    },
+    {
+      id:6,
+      name: 'Nagin'
+    },
+    {
+      id:7,
+      name: 'Kat Raj'
+    },
+    {
+      id:8,
+      name: 'Sai'
+    },
+    {
+      id:9,
+      name: 'SN Raju'
+    },
+    {
+      id:10,
+      name: 'Chitikesh Sai Naga Raju'
+    },
+    {
+      id:4,
+      name: 'Sai Naga'
+    },
   ];
 
   return (
     <View>
-      <Text style={{fontSize:30}}>List with Flat List Component</Text>
-      <FlatList 
-        data={users}
-        renderItem={({item})=><Text style={ExStyles.item}>{item.name}</Text>}
-        keyExtractor={item=>item.id}
-      />
+      <Text style={{fontSize:30}}>List with Map Function</Text>
+      <ScrollView style={{marginBottom:40}}>
+      {
+        users.map((item)=><Text style={ExStyles.item}>{item.name}</Text>)
+      }
+      </ScrollView>
     </View>
   );
 };
