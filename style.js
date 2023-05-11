@@ -19,6 +19,16 @@ const ExStyles = StyleSheet.create ({
         borderColor: '#033fa5',
         margin: 10,
     },
+    item:{
+        fontSize: 22,
+        padding: 10,
+        color: "#ff3366",
+        backgroundColor: "#bbeeaa",
+        borderWidth: 2,
+        borderColor: "#faaced",
+        margin: 10,
+        borderRadius: 15,
+    },
 });
 
 export default ExStyles;
