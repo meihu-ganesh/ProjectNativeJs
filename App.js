@@ -9,14 +9,15 @@
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
 import ExStyles from './style';
-import ClassComp from './Pages/ClassComp';
+import LCUseEffect from './Pages/LCUseEffect';
+
 
 
 const App = () => {
 
   return (
     <View>
-      <ClassComp />
+      <LCUseEffect />
     </View>
   );
 };
