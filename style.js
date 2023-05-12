@@ -29,6 +29,23 @@ const ExStyles = StyleSheet.create ({
         margin: 10,
         borderRadius: 15,
     },
+    gridContainer: {
+        flex:1,
+        flexDirection: "row",
+        flexWrap: "wrap",
+    },
+    gridItem: {
+        fontSize: 23,
+        backgroundColor: "#ffaa33",
+        color: "#fff",
+        margin: 7,
+        padding: 10,
+        width: 120,
+        height: 120,
+        borderRadius: 15,
+        textAlign: "center",
+        textAlignVertical: "center",
+    }
 });
 
 export default ExStyles;
