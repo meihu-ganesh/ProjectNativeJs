@@ -1,6 +1,9 @@
 import { StyleSheet } from "react-native";
 
 const ExStyles = StyleSheet.create ({
+    heading:{
+        fontSize: 27,
+    },
     textBox:{
         // color: '#000000',
         color: '#fff',
@@ -45,6 +48,20 @@ const ExStyles = StyleSheet.create ({
         borderRadius: 15,
         textAlign: "center",
         textAlignVertical: "center",
+    },
+    loopBox: {
+        flexDirection: "row",
+        borderWidth: 1,
+        borderColor: "#33aaff",
+        marginBottom: 6,
+        padding: 5,
+    },
+    loopItem: {
+        fontSize: 20,
+        color: "#ffaa33",
+        flex: 1,
+        margin: 2,
+        textAlign: "center",
     }
 });
 

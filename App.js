@@ -9,13 +9,15 @@
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
 import ExStyles from './style';
-import GridData from './Pages/GridData';
+import CompLoopFlatList from './Pages/CompLoopFlatList';
 
 
 const App = () => {
 
   return (
-    <GridData />
+    <View>
+      <CompLoopFlatList />
+    </View>
   );
 };
 
