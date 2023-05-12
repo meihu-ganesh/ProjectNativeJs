@@ -7,7 +7,7 @@ const LCUseEffect = () => {
     const [count, setcount] = useState(0);
 
     useEffect(()=>{
-        console.warn('count is '+ count);
+        console.warn('count is ' + count);
     },[]);
 
     return (

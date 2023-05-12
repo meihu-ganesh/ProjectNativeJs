@@ -8,16 +8,14 @@
 
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import ExStyles from './style';
-import LCUseEffect from './Pages/LCUseEffect';
-
+import UECompDidUp from './Pages/UECompDidUp';
 
 
 const App = () => {
 
   return (
     <View>
-      <LCUseEffect />
+      <UECompDidUp />
     </View>
   );
 };
