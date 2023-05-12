@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const ExStyles = StyleSheet.create ({
     heading:{
-        fontSize: 27,
+        fontSize: 30,
     },
     textBox:{
         // color: '#000000',

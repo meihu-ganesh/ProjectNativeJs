@@ -9,14 +9,14 @@
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
 import ExStyles from './style';
-import CompLoopFlatList from './Pages/CompLoopFlatList';
+import SectionListComp from './Pages/SectionListComp';
 
 
 const App = () => {
 
   return (
     <View>
-      <CompLoopFlatList />
+      <SectionListComp />
     </View>
   );
 };
