@@ -8,16 +8,14 @@
 
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import ResponsiveFlexUI from './Pages/ResponsiveFlexUI';
-import Buttons from './Pages/Buttons';
+import RadioButton from './Pages/RadioButton';
 
-// import ResponsiveFlex from './Pages/ResponsiveFlex';
 
 const App = () => {
 
   return (
     <View style={{flex:1}}>
-      <Buttons />
+      <RadioButton />
     </View>
   );
 };
