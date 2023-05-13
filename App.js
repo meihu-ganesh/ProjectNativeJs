@@ -8,14 +8,14 @@
 
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import ShowHideComp from './Pages/ShowHideComp';
+import UEUnMount from './Pages/UEUnMount';
 
 
 const App = () => {
 
   return (
     <View>
-      <ShowHideComp />
+      <UEUnMount />
     </View>
   );
 };
