@@ -10,11 +10,14 @@ import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
 import ExStyles from './style';
 import WebView from 'react-native-webview';
+import CustomModal from './Pages/CustomModal';
 
 const App = () => {
 
-  return (<WebView source={{uri:"https://reactnative.dev/"}} />)
-}
+  return (
+    <CustomModal />
+  );
+};
 
 
 export default App;
