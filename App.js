@@ -13,18 +13,21 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LoginTab from './components/LoginTab';
 import SignupTab from './components/SignupTab';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-const Tab = createBottomTabNavigator();
+// const Tab = createBottomTabNavigator();
+const TopTab = createMaterialTopTabNavigator();
 
 const App = () => {
 
 
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name='Login' component={LoginTab}/>
-        <Tab.Screen name='sign Up' component={SignupTab}/>
-      </Tab.Navigator>
+      <TopTab.Navigator>
+        <TopTab.Screen name='Login' component={LoginTab}/>
+        <TopTab.Screen name='Sign Up' component={SignupTab}/>
+        <TopTab.Screen name='Other' component={SignupTab}/>
+      </TopTab.Navigator>
     </NavigationContainer>
     // <LoginTab />
     // <SignupTab />
