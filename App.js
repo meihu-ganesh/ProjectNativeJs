@@ -8,16 +8,14 @@
 
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import ModalBox from './Pages/ModalBox';
-import PressableLP from './Pages/PressableLP';
-import EditStatusBar from './Pages/EditStatusBar';
+import CheckOS from './Pages/CheckOS';
 
 
 const App = () => {
 
   return (
     <View style={{flex:1}}>
-      <EditStatusBar />
+      <CheckOS />
     </View>
   );
 };
