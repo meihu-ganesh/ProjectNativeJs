@@ -8,17 +8,13 @@
 
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import CheckOS from './Pages/CheckOS';
-
+import ExStyles from './style';
+import WebView from 'react-native-webview';
 
 const App = () => {
 
-  return (
-    <View style={{flex:1}}>
-      <CheckOS />
-    </View>
-  );
-};
+  return (<WebView source={{uri:"https://reactnative.dev/"}} />)
+}
 
 
 export default App;
