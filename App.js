@@ -8,14 +8,14 @@
 
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import RadioButton from './Pages/RadioButton';
+import Loader from './Pages/Loader';
 
 
 const App = () => {
 
   return (
     <View style={{flex:1}}>
-      <RadioButton />
+      <Loader />
     </View>
   );
 };
