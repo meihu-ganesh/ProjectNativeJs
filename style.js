@@ -20,6 +20,7 @@ const ExStyles = StyleSheet.create ({
         borderWidth: 2,
         padding: 10,
         borderColor: '#033fa5',
+        borderRadius: 10,
         margin: 10,
     },
     item:{
