@@ -8,14 +8,14 @@
 
 import React, {useState} from 'react';
 import {Alert, Button, FlatList, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import Loader from './Pages/Loader';
+import ModalBox from './Pages/ModalBox';
 
 
 const App = () => {
 
   return (
     <View style={{flex:1}}>
-      <Loader />
+      <ModalBox />
     </View>
   );
 };
