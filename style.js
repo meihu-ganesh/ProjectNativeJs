@@ -23,6 +23,11 @@ const ExStyles = StyleSheet.create ({
         borderRadius: 10,
         margin: 10,
     },
+    error: {
+        fontSize: 18,
+        marginLeft: 20,
+        color: '#ff3366',
+    },
     item:{
         fontSize: 22,
         padding: 10,

@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "name": "Chitikesh",
+      "age": 18,
+      "email": "hsekitihc@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Ganesh",
+      "age": 17,
+      "email": "hsenag@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "CSNR Ganesh",
+      "age": 19,
+      "email": "meihuganesh369@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "Sai Naga Raju",
+      "age": 17,
+      "email": "chsainagaraju@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Kat Raj",
+      "age": "16",
+      "email": "kaatu@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "Nagin",
+      "age": "15",
+      "email": "nagin@convent.in",
+      "id": 7
+    },
+    {
+      "name": "NaNi",
+      "age": 13,
+      "email": "nani@convent.in",
+      "id": 8
+    },
+    {
+      "name": "Ch. Sai Naga Raju",
+      "age": 6,
+      "email": "1stB@convent.in",
+      "id": 9
+    },
+    {
+      "name": "Mei Hu Ganesh",
+      "age": 17,
+      "email": "snrganesh99@kgpian.iitkgp.ac.in",
+      "id": 10
+    }
+  ]
+}
