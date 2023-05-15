@@ -1,39 +1,30 @@
 import React, { useEffect, useState } from "react";
-import { FlatList, ScrollView, Text, View } from "react-native";
+import { Button, FlatList, ScrollView, Text, View } from "react-native";
 import ExStyles from "../style";
 
 const APIPlaying = () => {
 
-    const [data, setData] = useState([]);
-
-    const getAPIData = async () => {
-        // console.warn("Function Calleed");
-        const url = "http://10.0.2.2:3000/users";
-        let results = await fetch(url);
-        results = await results.json();
-        // console.warn(results);
-        setData(results);
-    }
-
-    useEffect(()=> {
-        getAPIData();
-    }, []);
+    const saveAPIData = async () => {
+        const data = {
+            name: "Sai Naga Raju",
+            age: 17,
+            email: 'chsainagaraju@gmail.com',
+        };
+        const url = "http://192.168.1.2:3000/users";
+        let  result = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+        });
+        result = await result.json();
+        console.warn("Data Updated");
+    };
 
     return (
         <View>
-            <Text style={ExStyles.heading}>Call JSON Server API</Text>
-            {
-                data.length ?
-                data.map((item)=>
-                    <View style={{borderWidth: 1, borderColor: "#333"}}>
-                        <Text style={{fontSize: 20, }}>{item.id}</Text>
-                        <Text style={{fontSize: 20, }}>{item.name}</Text>
-                        <Text style={{fontSize: 20, }}>{item.age}</Text>
-                        <Text style={{fontSize: 20, }}>{item.email}</Text>
-                    </View>
-                )
-                : null
-            }
+            <Text style={ExStyles.heading}>Pst API Call</Text>
+            <Button title="Save Data" onPress={saveAPIData} />
+            
         </View>
     );
 };
